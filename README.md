@@ -1,6 +1,6 @@
 # credit-risk-validation
 
-[![notebooks](https://github.com/YusufErem/credit-risk-validation/actions/workflows/notebooks.yml/badge.svg)](https://github.com/YusufErem/credit-risk-validation/actions/workflows/notebooks.yml)
+[![notebooks](https://github.com/YusufErem/credit-risk-validation/workflows/notebooks/badge.svg)](https://github.com/YusufErem/credit-risk-validation/actions/workflows/notebooks.yml)
 ![Python 3.13](https://img.shields.io/badge/python-3.13-blue)
 ![License: MIT](https://img.shields.io/badge/license-MIT-green)
 
