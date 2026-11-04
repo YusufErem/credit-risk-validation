@@ -1,0 +1,24 @@
+name: notebooks
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - run: pip install -r requirements.txt
+      - run: python data/download_data.py
+      - run: mkdir -p models
+      - run: |
+          for n in 01_data_understanding 02_feature_engineering 03_model_development 04_validation_report; do
+            jupyter nbconvert --to notebook --execute --output-dir /tmp/nb --ExecutePreprocessor.timeout=1200 notebooks/$n.ipynb
+          done

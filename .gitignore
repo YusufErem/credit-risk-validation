@@ -1,20 +1,10 @@
-# Data files (too large for GitHub)
+.venv/
 data/*.csv
 data/*.xls
 data/*.zip
 data/*.xlsx
-
-# Model files
 models/*.pkl
-
-# Build scripts
-build_nb*.py
-generate_report_pdf.py
-
-# OS
 .DS_Store
 __pycache__/
 *.pyc
-
-# Jupyter checkpoints
 .ipynb_checkpoints/
